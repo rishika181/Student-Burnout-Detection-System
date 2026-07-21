@@ -3,6 +3,10 @@
    ANALYTICS PAGE CSS
 ====================================== */
 
+
+/* ======================================
+   ANALYTICS PAGE CSS
+====================================== */
 *{
     margin:0;
     padding:0;
@@ -10,10 +14,16 @@
     font-family:'Poppins',sans-serif;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     background:#f5f7fb;
     color:#333;
+    overflow-x:hidden;
 }
+
 
 /* ================= HEADER ================= */
 
@@ -21,13 +31,14 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 8%;
+    padding:18px 6%;
     background:#fff;
     position:sticky;
     top:0;
     z-index:1000;
     box-shadow:0 2px 12px rgba(0,0,0,.08);
 }
+
 
 .logo{
     display:flex;
@@ -42,12 +53,16 @@ header{
 
 .logo h2{
     color:#6C63FF;
+    font-size:24px;
 }
+
 
 nav{
     display:flex;
+    align-items:center;
     gap:25px;
 }
+
 
 nav a{
     text-decoration:none;
@@ -56,9 +71,12 @@ nav a{
     transition:.3s;
 }
 
+
 nav a:hover{
     color:#6C63FF;
 }
+
+
 
 /* ================= TITLE ================= */
 
@@ -67,182 +85,435 @@ nav a:hover{
     padding:50px 20px 20px;
 }
 
+
 .title h1{
     color:#6C63FF;
-    font-size:38px;
-    margin-bottom:10px;
+    font-size:clamp(28px,4vw,40px);
+    margin-bottom:12px;
 }
+
 
 .title p{
     color:#666;
+    font-size:16px;
 }
 
-/* ================= SUMMARY ================= */
+
+
+/* ================= SUMMARY CARDS ================= */
+
 
 .summary{
     width:90%;
+    max-width:1200px;
     margin:40px auto;
+
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
     gap:20px;
 }
+
 
 .card{
     background:#fff;
     padding:25px;
     border-radius:18px;
+
     text-align:center;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.08);
+
     transition:.3s;
 }
+
 
 .card:hover{
     transform:translateY(-8px);
 }
+
 
 .card h3{
     color:#555;
     margin-bottom:10px;
 }
 
+
 .card h2{
     color:#6C63FF;
-    font-size:34px;
+    font-size:32px;
 }
+
+
 
 /* ================= CHARTS ================= */
 
+
 .charts{
+
     width:90%;
+    max-width:1200px;
+
     margin:40px auto;
+
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(450px,1fr));
-    gap:30px;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:25px;
 }
+
+
 
 .chart-card{
+
     background:#fff;
+
     padding:25px;
+
     border-radius:18px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.08);
+
 }
+
+
 
 .chart-card h2{
+
     text-align:center;
+
     color:#6C63FF;
+
     margin-bottom:20px;
+
 }
 
+
+
 .chart-card canvas{
-    width:100% !important;
-    height:320px !important;
+
+    width:100%!important;
+
+    max-width:100%;
+
+    height:320px!important;
+
 }
+
+
 
 /* ================= INSIGHTS ================= */
 
+
 .insights{
+
     width:90%;
+
     max-width:1000px;
+
     margin:40px auto;
+
     background:#fff;
+
     padding:30px;
+
     border-radius:18px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.08);
+
 }
+
+
 
 .insights h2{
+
     color:#6C63FF;
+
     margin-bottom:20px;
+
 }
+
 
 .insights ul{
+
     padding-left:20px;
+
 }
+
 
 .insights li{
+
     margin-bottom:12px;
-    color:#444;
+
     line-height:1.8;
+
+    color:#444;
+
 }
 
-/* ================= ACTIONS ================= */
+
+
+/* ================= BUTTONS ================= */
+
 
 .actions{
+
     display:flex;
+
     justify-content:center;
-    gap:20px;
+
+    align-items:center;
+
     flex-wrap:wrap;
+
+    gap:20px;
+
     margin:50px 0;
+
 }
+
+
 
 .actions a{
+
     text-decoration:none;
+
     background:#6C63FF;
-    color:#fff;
-    padding:14px 24px;
+
+    color:white;
+
+    padding:14px 25px;
+
     border-radius:10px;
+
     transition:.3s;
+
 }
 
+
+
 .actions a:hover{
+
     background:#574bdb;
+
 }
+
+
 
 /* ================= FOOTER ================= */
 
+
 footer{
+
     margin-top:40px;
+
     background:#fff;
+
     text-align:center;
+
     padding:20px;
+
     color:#666;
-    box-shadow:0 -2px 10px rgba(0,0,0,.05);
+
 }
 
-/* ================= RESPONSIVE ================= */
+
+
+/* ================= TABLET ================= */
+
 
 @media(max-width:900px){
 
-    header{
-        flex-direction:column;
-        gap:15px;
-    }
 
-    nav{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
+header{
 
-    .charts{
-        grid-template-columns:1fr;
-    }
+    flex-direction:column;
 
-    .chart-card canvas{
-        height:250px !important;
-    }
+    gap:15px;
 
 }
 
-@media(max-width:768px){
 
-    .title h1{
-        font-size:30px;
-    }
+nav{
 
-    .summary{
-        grid-template-columns:1fr;
-    }
+    justify-content:center;
 
-    .actions{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .actions a{
-        width:90%;
-        max-width:300px;
-        text-align:center;
-    }
+    flex-wrap:wrap;
 
 }
 
+
+.chart-card canvas{
+
+    height:260px!important;
+
+}
+
+
+
+}
+
+
+
+
+/* ================= MOBILE ================= */
+
+
+@media(max-width:600px){
+
+
+header{
+
+    padding:15px 20px;
+
+}
+
+
+.logo h2{
+
+    font-size:20px;
+
+}
+
+
+.logo i{
+
+    font-size:24px;
+
+}
+
+
+
+nav{
+
+    gap:15px;
+
+}
+
+
+nav a{
+
+    font-size:14px;
+
+}
+
+
+
+.title{
+
+    padding:35px 15px 15px;
+
+}
+
+
+
+.title h1{
+
+    font-size:28px;
+
+}
+
+
+
+.summary{
+
+    width:95%;
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.card{
+
+    padding:20px;
+
+}
+
+
+
+.card h2{
+
+    font-size:28px;
+
+}
+
+
+
+.charts{
+
+    width:95%;
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.chart-card{
+
+    padding:15px;
+
+}
+
+
+
+.chart-card canvas{
+
+    height:220px!important;
+
+}
+
+
+
+.insights{
+
+    width:95%;
+
+    padding:20px;
+
+}
+
+
+
+.insights li{
+
+    font-size:14px;
+
+}
+
+
+
+.actions{
+
+    flex-direction:column;
+
+}
+
+
+
+.actions a{
+
+    width:90%;
+
+    text-align:center;
+
+}
+
+
+
+footer{
+
+    font-size:14px;
+
+}
+
+
+}
