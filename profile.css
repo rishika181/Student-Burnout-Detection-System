@@ -1,0 +1,330 @@
+
+/* ======================================
+   PROFILE PAGE CSS
+====================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+/* ===============================
+        HEADER
+================================ */
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:#fff;
+
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.logo i{
+
+    color:#6C63FF;
+
+    font-size:30px;
+
+}
+
+.logo h2{
+
+    color:#6C63FF;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#6C63FF;
+
+}
+
+
+/* ===============================
+      PROFILE SECTION
+================================ */
+
+.profile-section{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 20px;
+
+}
+
+.profile-card{
+
+    width:100%;
+
+    max-width:700px;
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.profile-card h1{
+
+    text-align:center;
+
+    color:#6C63FF;
+
+    margin-bottom:10px;
+
+}
+
+.profile-card p{
+
+    text-align:center;
+
+    color:#777;
+
+    margin-bottom:30px;
+
+}
+
+/* ===============================
+      PROFILE IMAGE
+================================ */
+
+.profile-image{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.profile-image img{
+
+    width:140px;
+
+    height:140px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid #6C63FF;
+
+    margin-bottom:15px;
+
+}
+
+.profile-image input{
+
+    cursor:pointer;
+
+}
+
+/* ===============================
+      FORM
+================================ */
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:20px;
+
+}
+
+.input-group label{
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+.input-group input,
+
+.input-group select,
+
+.input-group textarea{
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.input-group input:focus,
+
+.input-group select:focus,
+
+.input-group textarea:focus{
+
+    border-color:#6C63FF;
+
+    box-shadow:0 0 8px rgba(108,99,255,.3);
+
+}
+
+textarea{
+
+    resize:none;
+
+}
+
+/* ===============================
+      GENDER
+================================ */
+
+.gender{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+.gender label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-weight:500;
+
+}
+
+/* ===============================
+      BUTTON
+================================ */
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#6C63FF;
+
+    color:#fff;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#574bdb;
+
+    transform:translateY(-3px);
+
+}
+
+button i{
+
+    margin-right:8px;
+
+}
+
+/* ===============================
+      FOOTER
+================================ */
+
+footer{
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+
+    background:#fff;
+
+    color:#666;
+
+    box-shadow:0 -2px 10px rgba(0,0,0,.05);
+
+}
+

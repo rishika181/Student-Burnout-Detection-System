@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analytics | Burnout Tracker</title>
+
+    <link rel="stylesheet" href="analytics.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-heart-pulse"></i>
+
+            <h2>Burnout Tracker</h2>
+
+        </div>
+
+        <nav>
+
+            <a href="dashboard.html">Dashboard</a>
+
+            <a href="history.html">History</a>
+
+            <a href="analytics.html">Analytics</a>
+
+            <a href="profile.html">Profile</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= TITLE ================= -->
+
+    <section class="title">
+
+        <h1>
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            Wellness Analytics
+
+        </h1>
+
+        <p>
+
+            Visualize your burnout trends and track your overall well-being.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= SUMMARY CARDS ================= -->
+
+    <section class="summary">
+
+        <div class="card">
+
+            <h3>Average Burnout</h3>
+
+            <h2 id="avgBurnout">0%</h2>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Average Sleep</h3>
+
+            <h2 id="avgSleep">0 hrs</h2>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Average Study</h3>
+
+            <h2 id="avgStudy">0 hrs</h2>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Total Check-ins</h3>
+
+            <h2 id="totalCheckins">0</h2>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CHARTS ================= -->
+
+    <section class="charts">
+
+        <div class="chart-card">
+
+            <h2>Burnout Score Trend</h2>
+
+            <canvas id="burnoutChart"></canvas>
+
+        </div>
+
+        <div class="chart-card">
+
+            <h2>Stress Level</h2>
+
+            <canvas id="stressChart"></canvas>
+
+        </div>
+
+        <div class="chart-card">
+
+            <h2>Sleep Hours</h2>
+
+            <canvas id="sleepChart"></canvas>
+
+        </div>
+
+        <div class="chart-card">
+
+            <h2>Study Hours</h2>
+
+            <canvas id="studyChart"></canvas>
+
+        </div>
+
+        <div class="chart-card">
+
+            <h2>Motivation Level</h2>
+
+            <canvas id="motivationChart"></canvas>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= INSIGHTS ================= -->
+
+    <section class="insights">
+
+        <h2>Insights</h2>
+
+        <ul id="insightList">
+
+        </ul>
+
+    </section>
+
+
+
+    <!-- ================= ACTIONS ================= -->
+
+    <section class="actions">
+
+        <a href="dashboard.html">
+
+            <i class="fa-solid fa-house"></i>
+
+            Dashboard
+
+        </a>
+
+        <a href="history.html">
+
+            <i class="fa-solid fa-clock-rotate-left"></i>
+
+            History
+
+        </a>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Student Burnout Detection &
+            Well-Being Monitoring System
+
+        </p>
+
+    </footer>
+
+
+
+    <script src="analytics.js"></script>
+
+</body>
+
+</html>
+

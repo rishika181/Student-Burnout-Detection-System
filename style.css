@@ -1,0 +1,550 @@
+
+
+/* ===========================
+   GOOGLE FONT & RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+
+/* ===========================
+        HEADER
+=========================== */
+
+header{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:#fff;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.logo i{
+
+    color:#6C63FF;
+
+    font-size:32px;
+
+}
+
+.logo h2{
+
+    color:#6C63FF;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:28px;
+
+    align-items:center;
+
+}
+
+nav ul li a{
+
+    color:#333;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#6C63FF;
+
+}
+
+.start-btn{
+
+    background:#6C63FF;
+
+    color:white !important;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+.start-btn:hover{
+
+    background:#584ef5;
+
+}
+
+
+
+/* ===========================
+        HERO
+=========================== */
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:60px 8%;
+
+    gap:60px;
+
+}
+
+.hero-left{
+
+    flex:1;
+
+}
+
+.hero-left h1{
+
+    font-size:55px;
+
+    line-height:1.2;
+
+    color:#222;
+
+    margin-bottom:25px;
+
+}
+
+.hero-left p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+    font-size:18px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    background:#6C63FF;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#584ef5;
+
+    transform:translateY(-4px);
+
+}
+
+.hero-right{
+
+    flex:1;
+
+}
+
+.hero-right img{
+
+    max-width:520px;
+
+    margin:auto;
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+
+
+/* ===========================
+     FLOAT ANIMATION
+=========================== */
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* ===========================
+        COMMON TITLE
+=========================== */
+
+section{
+
+    padding:80px 8%;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-size:36px;
+
+    color:#6C63FF;
+
+    margin-bottom:40px;
+
+}
+#contact form{
+    max-width:600px;
+    margin:30px auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+#contact form input,
+#contact form textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+}
+
+#contact form button{
+    width:100%;
+    padding:15px;
+    background:#6C63FF;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#contact form button:hover{
+    background:#574bdb;
+}
+
+/* ===========================
+        FEATURES
+=========================== */
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+
+}
+
+.feature-card{
+
+    background:#fff;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 12px 35px rgba(0,0,0,.15);
+
+}
+
+.feature-card i{
+
+    font-size:45px;
+
+    color:#6C63FF;
+
+    margin-bottom:20px;
+
+}
+
+.feature-card h3{
+
+    margin-bottom:15px;
+
+    color:#222;
+
+}
+
+.feature-card p{
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+
+
+
+/* ===========================
+        STATISTICS
+=========================== */
+
+#stats{
+
+    background:#6C63FF;
+
+    color:#fff;
+
+}
+
+#stats h2{
+
+    color:#fff;
+
+}
+
+.stats-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+.stats-container div{
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.stats-container div:hover{
+
+    transform:scale(1.05);
+
+}
+
+.stats-container h1{
+
+    font-size:48px;
+
+    margin-bottom:10px;
+
+}
+
+.stats-container p{
+
+    font-size:18px;
+
+}
+
+
+
+/* ===========================
+      HOW IT WORKS
+=========================== */
+
+.steps{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+.step{
+
+    background:#fff;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.step:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.step h1{
+
+    width:70px;
+
+    height:70px;
+
+    background:#6C63FF;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    font-size:30px;
+
+}
+
+.step h3{
+
+    color:#333;
+
+}
+
+
+
+/* ===========================
+      CARD ANIMATION
+=========================== */
+
+.feature-card,
+.step,
+.stats-container div{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+

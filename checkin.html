@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daily Check-In | Burnout Tracker</title>
+
+    <link rel="stylesheet" href="checkin.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-heart-pulse"></i>
+
+        <h2>BurnoutTracker</h2>
+
+    </div>
+
+    <nav>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="history.html">History</a>
+
+        <a href="analytics.html">Analytics</a>
+
+        <a href="profile.html">Profile</a>
+
+    </nav>
+
+</header>
+
+
+
+<section class="checkin-section">
+
+<div class="container">
+
+<h1>Daily Well-Being Check-In</h1>
+
+<p>
+
+Fill today's details to monitor your mental and academic health.
+
+</p>
+
+<form id="checkinForm">
+
+
+<div class="input-group">
+
+<label>Today's Mood</label>
+
+<select id="mood" required>
+
+<option value="">Select Mood</option>
+
+<option>😊 Very Happy</option>
+
+<option>🙂 Happy</option>
+
+<option>😐 Neutral</option>
+
+<option>😔 Sad</option>
+
+<option>😭 Very Stressed</option>
+
+</select>
+
+</div>
+
+
+
+<div class="input-group">
+
+<label>Stress Level (1 - 10)</label>
+
+<input
+
+type="range"
+
+min="1"
+
+max="10"
+
+value="5"
+
+id="stress">
+
+<p>
+
+Selected :
+
+<span id="stressValue">
+
+5
+
+</span>
+
+</p>
+
+</div>
+
+
+
+
+<div class="input-group">
+
+<label>Sleep Duration (Hours)</label>
+
+<input
+
+type="number"
+
+id="sleep"
+
+min="0"
+
+max="15"
+
+placeholder="Example : 7"
+
+required>
+
+</div>
+
+
+
+
+<div class="input-group">
+
+<label>Study Hours</label>
+
+<input
+
+type="number"
+
+id="study"
+
+min="0"
+
+max="18"
+
+placeholder="Example : 6"
+
+required>
+
+</div>
+
+
+
+
+<div class="input-group">
+
+<label>Motivation Level (1 - 10)</label>
+
+<input
+
+type="range"
+
+min="1"
+
+max="10"
+
+value="5"
+
+id="motivation">
+
+<p>
+
+Selected :
+
+<span id="motivationValue">
+
+5
+
+</span>
+
+</p>
+
+</div>
+
+
+
+
+<div class="input-group">
+
+<label>Water Intake (Glasses)</label>
+
+<input
+
+type="number"
+
+id="water"
+
+min="0"
+
+max="20"
+
+placeholder="Example : 8">
+
+</div>
+
+
+
+
+<div class="input-group">
+
+<label>Exercise (Minutes)</label>
+
+<input
+
+type="number"
+
+id="exercise"
+
+min="0"
+
+max="300"
+
+placeholder="Example : 30">
+
+</div>
+
+
+
+
+<div class="input-group">
+
+<label>Screen Time (Hours)</label>
+
+<input
+
+type="number"
+
+id="screen"
+
+min="0"
+
+max="24"
+
+placeholder="Example : 5">
+
+</div>
+
+
+
+
+<div class="input-group">
+
+<label>Today's Goal</label>
+
+<input
+
+type="text"
+
+id="goal"
+
+placeholder="Example : Complete DP Questions">
+
+</div>
+
+
+
+
+<div class="input-group">
+
+<label>Additional Notes</label>
+
+<textarea
+
+id="notes"
+
+rows="5"
+
+placeholder="Write about your day...">
+
+</textarea>
+
+</div>
+
+
+
+<button type="submit">
+
+<i class="fa-solid fa-floppy-disk"></i>
+
+Save Today's Check-In
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<p>
+
+© 2026 Student Burnout Detection &
+Well-Being Monitoring System
+
+</p>
+
+</footer>
+
+
+
+<script src="checkin.js"></script>
+
+</body>
+
+</html>
+

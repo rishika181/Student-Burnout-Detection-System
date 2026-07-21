@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Burnout Tracker</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-heart-pulse"></i>
+
+            <h2>Burnout Tracker</h2>
+
+        </div>
+
+        <nav>
+             <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+
+            <a href="history.html">History</a>
+
+            <a href="analytics.html">Analytics</a>
+
+            <a href="profile.html">Profile</a>
+
+            <a href="index.html">Logout</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- Welcome -->
+
+    <section class="welcome">
+
+        <h1>
+
+            Welcome,
+
+            <span id="username">
+
+                Student
+
+            </span>
+
+            👋
+
+        </h1>
+
+        <p>
+
+            Here's your mental wellness report for today.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- Burnout Score -->
+
+    <section class="burnout-card">
+
+        <h2>Today's Burnout Score</h2>
+
+        <h1 id="burnoutScore">
+
+            0
+
+        </h1>
+
+        <h3 id="riskLevel">
+
+            Healthy
+
+        </h3>
+
+    </section>
+
+
+
+    <!-- Today's Summary -->
+
+    <section class="summary">
+
+        <div class="card">
+
+            <i class="fa-solid fa-face-smile"></i>
+
+            <h3>Mood</h3>
+
+            <p id="mood">-</p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-heart-pulse"></i>
+
+            <h3>Stress</h3>
+
+            <p id="stress">-</p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-bed"></i>
+
+            <h3>Sleep</h3>
+
+            <p id="sleep">-</p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-book"></i>
+
+            <h3>Study Hours</h3>
+
+            <p id="study">-</p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <h3>Motivation</h3>
+
+            <p id="motivation">-</p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-glass-water"></i>
+
+            <h3>Water</h3>
+
+            <p id="water">-</p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-person-running"></i>
+
+            <h3>Exercise</h3>
+
+            <p id="exercise">-</p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <i class="fa-solid fa-mobile-screen"></i>
+
+            <h3>Screen Time</h3>
+
+            <p id="screen">-</p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Goal -->
+
+    <section class="goal-box">
+
+        <h2>
+
+            Today's Goal
+
+        </h2>
+
+        <p id="goal">
+
+            -
+
+        </p>
+
+    </section>
+
+
+
+    <!-- Notes -->
+
+    <section class="notes-box">
+
+        <h2>
+
+            Journal / Notes
+
+        </h2>
+
+        <p id="notes">
+
+            -
+
+        </p>
+
+    </section>
+
+
+
+    <!-- Recommendation -->
+
+    <section class="recommendation">
+
+        <h2>
+
+            Personalized Recommendations
+
+        </h2>
+
+        <ul id="recommendationList">
+
+        </ul>
+
+    </section>
+
+
+
+    <!-- Quick Actions -->
+
+    <section class="actions">
+
+        <a href="checkin.html">
+
+            New Check-In
+
+        </a>
+
+        <a href="history.html">
+
+            View History
+
+        </a>
+
+        <a href="analytics.html">
+
+            Analytics
+
+        </a>
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Student Burnout Detection & Well-Being Monitoring System
+
+        </p>
+
+    </footer>
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
+
